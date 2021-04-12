@@ -1,49 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Test func</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-        
-        body {
-            background-color: #e0f1d9;
-        }
-        h1 {
-            font-size: 2rem;
-            letter-spacing: 2px;
-            font-family: 'Poppins',sans-serif;
-            background-color: #72c453;
-            padding: 2.2rem;
-            margin: 0rem 0.6rem;
-            cursor: context-menu;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
-        h5 {
-            font-size: 1.2rem;
-            font-family:'Poppins',sans-serif;
-            padding: 0.6rem 2rem;
-            border: 2px solid #72c453;
-            margin: 1rem 0.6rem;
-            display: inline-block;
-            cursor: pointer;
-        }
-        h5:hover {
-            background-color: #60aa46;
-        }
-        #categories {
-            margin: auto;
-            margin-top: 3.8rem;
-            width: 80%;
-        }
+      :root {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #e0f1d9;
+      }
+
+      h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        background-color: #72c453;
+        padding: 2.2rem;
+        margin: 0rem 0.6rem;
+        cursor: context-menu;
+      }
+
+      h5 {
+        font-size: 1.2rem;
+        padding: 0.6rem 2rem;
+        border: 2px solid #72c453;
+        margin: 1rem 0.6rem;
+        display: inline-block;
+        cursor: pointer;
+      }
+      h5:hover {
+        background-color: #60aa46;
+      }
+      #categories {
+        margin: auto;
+        margin-top: 3.8rem;
+        width: 80%;
+      }
+
+      #business_id {
+        width: 60%;
+        margin: 2rem auto 0.6rem auto;
+        display: block;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 3px #ddd;
+        border-radius: 4px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      #business-id-btn {
+        width: 30%;
+        margin: 0.5rem auto;
+        display: block;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.2rem;
+        background-color: #68b64c;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 3px #ddd;
+      }
+      
+      #business-id-btn:hover {
+        background-color: #5ba042;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Categorías</h1>
+    <div id="business">
+      <input type="text" name="business_id" id="business_id" value="" />
+      <button id="business-id-btn">Seleccionar tienda</button>
+    </div>
     <div id="categories"></div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
